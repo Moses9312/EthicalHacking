@@ -1,7 +1,8 @@
 import subprocess as sub
 
-interface = "eth0"
-new_mac = "00:11:22:33:44:88"
+print(sub.call("ifconfig"))
+interface = input("interface > ")
+new_mac = input("new MAC > ")
 print("[+] Changing MAC address for " + interface + " to " + new_mac)
 
 
